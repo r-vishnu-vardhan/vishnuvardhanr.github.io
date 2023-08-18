@@ -1,0 +1,188 @@
+{
+  "basics": {
+    "name": "Vishnu Vardhan Revalapalli",
+    "label": "Technical Lead",
+    "picture": "vishnuvardhan.png",
+    "email": "vishnu.vardhan.r@outlook.com",
+    "phone": "+46 72-786 07 39",
+    "website": "https://www.linkedin.com/in/vishnu-vardhan-revalapalli-2b282a241/",
+    "summary": "Passionate software developer with around 8 years of experience driving quality and consistency throughout all phases of software development projects. A partner who leads collaborative efforts with analysts, QA and support engineers throughout a product lifecycle to produce high-quality, user-friendly, scalable and bug-free software. I credit my success to the fundamental belief that business needs must be fully understood and remain paramount throughout a project. Compounded by my core belief in Agile methodologies and extensive experience using a broad range of technologies, I’m able to document the most efficient architecture for a true end-to-end solution. Results remain unparalleled.",
+    "location": {
+      "address": "Håkan Lundbergs gata 24 lgh",
+      "postalCode": "252 33",
+      "city": "Helsingborg",
+      "countryCode": "SE",
+      "region": "Sweden"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "vishnu-vardhan-revalapalli",
+        "url": "https://www.linkedin.com/in/"
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "HCL Sweden AB",
+      "position": "Technical Lead",
+      "website": "https://www.hcltech.com/geo-presence/sweden",
+      "startDate": "10/07/2021",
+      "endDate": "Present",
+      "location": "Helsingborg, Skane County, Sweden",
+      "jobType": "Full-time",
+      "summary": "HCL Technologies is a next-generation global technology company that helps enterprises reimagine their businesses for the digital age. Through its worldwide network of R&D facilities and co-innovation labs, global delivery capabilities, and over 150,000+ ‘Ideapreneurs’ across 49 countries, HCL delivers holistic services across industry verticals to leading enterprises, including 250 of the Fortune 500 and 650 of the Global 2000.",
+      "highlights": [
+        "### INGKA Group / IKEA IT AB",
+        "As part of my journey in HCL, I am working for INGKA group which brought the IKEA Brand to 30 countries and millions of homes.",
+        "Working in an enterprise environment with microservices, event-driven systems, data integration pipelines between systems and applications, monitoring the data integrations and tracing the events",
+        "Design, development, implementation and maintenance of high throughput, high volume, resilient data integration pipelines, and components between Kafka (Connect Connect), GCP, Oracle, Event Mesh (Solace), and API applications.",
+        "Development and maintenance of highly scalable, resource-efficient, flexible, resilient, fault-tolerant Kafka plugins - Connectors, Single Message Transforms and Kafka Streams applications.",
+        "Developed micro-services in SpringBoot, Flask frameworks using Java, Kotlin and Python.",
+        "Implemented Kafka mirror makers between different Kafka clusters across different data-centers.",
+        "Automation of frequent operational activities using Ansible.",
+        "Developed Jenkins CICD scripts to automate build and deployment jobs uisng Bash scripting and Groovy.",
+        "TECH: Java, Kotlin, Spring, Springboot, Strimzi Kafka, Strimzi Bridge, Kafka, Kafka Connect, Kafka Transforms, Kafka SMT, Kafka Connector, Kafka Converters, Schema Registry, AVRO, JSON, XML, Openshift, Kubernetes, Helm, Docker, Ansible, GCP, Google Cloud Pub-Sub, Cloud Run, GKE, Solace, Event Mesh, Oracle, PostgreSQL, Jenkins, Prometheus, Grafana, Splunk, Solace."
+      ]
+    },
+    {
+      "company": "Mphasis Limited",
+      "position": "Senior Software Engineer",
+      "website": "https://www.mphasis.com/",
+      "startDate": "02/12/2018",
+      "endDate": "09/24/2021",
+      "location": "Bangalore, India",
+      "jobType": "Full-time",
+      "summary": "Work full time as senior software engineer.",
+      "highlights": [
+        "### FedEx",
+        "Designed and implemented Java-based-applications and defined the objectives & functionality based on requirement.",
+        "Implemented web pages using Angular Material Design, HTML5, CSS Angular 8.",
+        "Transformed Monolithic application to microservices using Java and Springboot.",
+        "Outlined documents & performed program coding & testing in complince with the approved life cycle methodoligies.",
+        "Resolved application based issues through debugging, market research and investigation",
+        "Fixed & troubleshoot Java code issues and technical issues for developers during project life cycle",
+        "TECH: Material Design, Angular 8, HTML5, CSS, Type Script, Java8, Spring-Boot, Spring Framework, Rest-Service, Microservices, MySQL, Oracle, SVN, GitLab, Maven, JUnit, Jenkins, Visual Studio Code, Intellij."
+      ]
+    },
+    {
+      "company": "Blujay Solutions PVT LTD",
+      "position": "Software Engineer",
+      "website": "https://www.blujaysolutions.com/",
+      "startDate": "12/07/2015",
+      "endDate": "01/31/2018",
+      "location": "Hyderabad, India",
+      "jobType": "Full-time",
+      "summary": "Work full time as senior software engineer.",
+      "highlights": [
+        "### CUSTOMS MANAGEMENT (KEC) / US Customs",
+        "Designed and implemented Java-based-applications and defined the objectives & functionality based on requirement.",
+        "Implemented application using Java, Spring MVC, Hibernate, Rest-services.",
+        "Outlined documents & performed program coding & testing in complince with the approved life cycle methodoligies.",
+        "Resolved application based issues through debugging, market research and investigation",
+        "Fixed & troubleshoot Java code issues and technical issues for developers during project life cycle",
+        "TECH: Java, Spring MVC, Hibernate, Drools, JPA, Oracle, Rest-Services, iReports, JSP, JDBC."
+      ]
+    }
+  ],
+  "volunteer": [],
+  "education": [
+    {
+      "institution": "Jawaharlal Nehru Technological University, Hyderabad",
+      "area": "",
+      "studyType": "B-Tech in Electronics and Communication Engineering",
+      "startDate": "08/01/2009",
+      "endDate": "2014",
+      "gpa": "",
+      "courses": []
+    }
+  ],
+  "awards": [],
+  "publications": [],
+  "skills": [
+    {
+      "name": "Back End Development",
+      "level": "Master",
+      "keywords": [
+        "API Applications",
+        "Agile Methodologies",
+        "Ansible",
+        "Apache",
+        "AVRO",
+        "Backend Applications",
+        "CI/CD",
+        "Cloud Native Application Development",
+        "CSS",
+        "Design Patterns",
+        "Docker",
+        "Eclipse",
+        "Event Mesh (Solace)",
+        "Git",
+        "Google Cloud Platform",
+        "Google Cloud Pub-Sub",
+        "Gradle",
+        "Hibernate",
+        "Helm",
+        "HTML5",
+        "JUnit",
+        "Java",
+        "JPA",
+        "JDBC",
+        "JSP",
+        "TypeScript",
+        "Jenkins",
+        "Jira",
+        "Kafka",
+        "Kafka Connect",
+        "Kafka Converters",
+        "Kafka Transforms",
+        "Kafka SMT",
+        "Kotlin",
+        "KSQL",
+        "Kubernetes",
+        "Maven",
+        "Microservices",
+        "Mockito",
+        "Openshift Container Platform (OCP)",
+        "Rest APIs",
+        "SQL",
+        "Schema Registry",
+        "Scrum",
+        "Spring",
+        "Spring Boot",
+        "Spring Cloud",
+        "Spring MVC",
+        "Strimzi Kafka",
+        "Web Development",
+        "XML"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Native speaker"
+    },
+    {
+      "language": "Hindi",
+      "fluency": "Native Second Language"
+    },
+    {
+      "language": "Telugu",
+      "fluency": "Native First Language"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Travel",
+      "url": "",
+      "keywords": []
+    },
+    {
+      "name": "Cricket",
+      "url": "",
+      "keywords": []
+    }
+  ],
+  "references": []
+}
