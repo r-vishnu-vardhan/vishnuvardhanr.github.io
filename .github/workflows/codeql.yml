@@ -28,7 +28,7 @@ jobs:
         for var in $CHANGED_PROJECTS; do
           projects+=($var)
         done
-        echo "::set-output name=projects::${projects[@]}"
+        echo "name=projects::${projects[@]}" >> $GITHUB_OUTPUT
 
     - name: Run Code Scanning - Project
       if: steps.find-projects.outputs.projects != ''
