@@ -51,7 +51,6 @@ jobs:
       with:
         languages: javascript
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        paths: '/'
 
     - name: Upload SARIF results
       uses: github/codeql-action/upload-sarif@v2
