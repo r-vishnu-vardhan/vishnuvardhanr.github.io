@@ -30,21 +30,21 @@ jobs:
         done
         echo "name=projects::${projects[@]}" >> $GITHUB_OUTPUT
 
-    - name: Find projects path
-      id: path
-      if: steps.find-projects.outputs.projects != ''
-      run: |-
-          echo "List of projects:${{ steps.find-projects.outputs.projects }}"
-          propath=()
-          for var in ${{ steps.find-projects.outputs.projects }}; do
-            echo "PATH 1:$var"
-            PATH1=$(cut -d'/' -f2 <<<$var)
-            echo "PATH 1:$PATH1"
-            ls -lart
-            cd ./$PATH1
-            pwd
-            propath=($var)
-          done
+    # - name: Find projects path
+    #   id: path
+    #   if: steps.find-projects.outputs.projects != ''
+    #   run: |-
+    #       echo "List of projects:${{ steps.find-projects.outputs.projects }}"
+    #       propath=()
+    #       for var in ${{ steps.find-projects.outputs.projects }}; do
+    #         echo "PATH 1:$var"
+    #         PATH1=$(cut -d'/' -f2 <<<$var)
+    #         echo "PATH 1:$PATH1"
+    #         ls -lart
+    #         cd ./$PATH1
+    #         pwd
+    #         propath=($var)
+    #       done
 
     - name: Run Code Scanning - Project
       uses: github/codeql-action/analyze@v2
