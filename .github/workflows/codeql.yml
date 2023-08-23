@@ -30,14 +30,12 @@ jobs:
         done
         echo "name=projects::${projects[@]}" >> $GITHUB_OUTPUT
 
-    - name: Run Code Scanning - Project
+    - name: Find projects path
+      id: path
       if: steps.find-projects.outputs.projects != ''
-      uses: github/codeql-action/analyze@v1
-      with:
-        languages: javascript
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        run: |-
+      run: |-
           echo "List of projects:${{ steps.find-projects.outputs.projects }}"
+          propath=()
           for var in ${{ steps.find-projects.outputs.projects }}; do
             echo "PATH 1:$var"
             PATH1=$(cut -d'/' -f2 <<<$var)
@@ -45,7 +43,15 @@ jobs:
             ls -lart
             cd ./$PATH1
             pwd
-        paths: './$PATH1'
+            propath=($var)
+          done
+
+    - name: Run Code Scanning - Project
+      uses: github/codeql-action/analyze@v1
+      with:
+        languages: javascript
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        paths: steps.path.output.propath
 
     - name: Upload SARIF results
       uses: github/codeql-action/upload-sarif@v2
