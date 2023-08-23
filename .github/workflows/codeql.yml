@@ -1,0 +1,68 @@
+# For most projects, this workflow file will not need changing; you simply need
+# to commit it to your repository.
+#
+# You may wish to alter this file to override the set of languages analyzed,
+# or to provide custom queries or build logic.
+#
+# ******** NOTE ********
+# We have attempted to detect the languages in your repository. Please check
+# the `language` matrix defined below to confirm you have the correct set of
+# supported CodeQL languages.
+#
+name: Multi-Project Code Scanning
+
+on:
+  push:
+    branches:
+      - main # Adjust as needed
+
+jobs:
+  code_scan:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        project:
+          - java_project
+          - python_project
+          # Add more projects as needed
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Setup Java and Maven (for Java project)
+        if: matrix.project == 'java_project'
+        uses: actions/setup-java@v2
+        with:
+          java-version: '11' # Adjust as needed
+        run: |
+          cd ${{ matrix.project }}
+          ./gradlew wrapper --gradle-version 7.2 # Use Gradle Wrapper
+          chmod +x ./gradlew
+
+      - name: Setup Python (for Python project)
+        if: matrix.project == 'python_project'
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x' # Adjust as needed
+
+      - name: Build and Scan (Java)
+        if: matrix.project == 'java_project'
+        run: |
+          cd ${{ matrix.project }}
+          ./gradlew build
+          echo "::group::Run CodeQL analysis"
+          npx -p @github/codeql-cli/codeql code-scanning analyze --dev
+          echo "::endgroup::"
+
+      - name: Build and Scan (Python)
+        if: matrix.project == 'python_project'
+        run: |
+          cd ${{ matrix.project }}
+          pip install -r requirements.txt
+          echo "::group::Run CodeQL analysis"
+          npx -p @github/codeql-cli/codeql code-scanning analyze --dev
+          echo "::endgroup::"
+
+      # Add more steps for additional projects if necessary
