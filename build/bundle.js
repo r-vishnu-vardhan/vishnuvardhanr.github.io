@@ -88,7 +88,7 @@ var Resume = React.createClass({
 });
 
 React.render(
-  React.createElement(Resume, { source: "vishnuresume.json" }),
+  React.createElement(Resume, { source: "vishnuresume" }),
   document.getElementById("app")
 );
 ("use strict");
