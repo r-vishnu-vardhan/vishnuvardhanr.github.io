@@ -20,7 +20,7 @@ jobs:
       id: find-projects
       run: |
         git fetch origin
-        echo "::set-output name=file_names::$(find . -type f -name '*build*' -exec basename {} \;) are changed files"
+        echo "name=file_names::$(find . -type f -name '*build*' -exec basename {} \;) are changed files" >> $GITHUB_OUTPUT
         CHANGED_PROJECTS=$(git diff --name-only origin/main)
         echo "Truncated Project list$CHANGED_PROJECTS"
         echo " LOG BREAK"
