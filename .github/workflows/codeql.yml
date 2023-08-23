@@ -1,4 +1,4 @@
-name: Sonar build workflow
+name: build workflow
 
 on:
   push:
