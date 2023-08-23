@@ -20,7 +20,7 @@ jobs:
       id: find-projects
       run: |
         git fetch origin
-        # echo "::set-output name=file_names::$(find . -type f -name '*component*' -exec basename {} \;) are changed files"
+        echo "::set-output name=file_names::$(find . -type f -name '*build*' -exec basename {} \;) are changed files"
         CHANGED_PROJECTS=$(git diff --name-only origin/main)
         echo "Truncated Project list$CHANGED_PROJECTS"
         echo " LOG BREAK"
@@ -48,4 +48,4 @@ jobs:
         paths: './$PATH1'
 
     - name: Upload SARIF results
-      uses: github/codeql-action/upload-sarif@v1
+      uses: github/codeql-action/upload-sarif@v2
