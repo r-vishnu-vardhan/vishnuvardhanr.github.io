@@ -14,7 +14,7 @@ name: Multi-Project Code Scanning
 on:
   push:
     branches:
-      - main # Adjust as needed
+      - main
 
 jobs:
   code_scan:
